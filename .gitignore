@@ -164,5 +164,5 @@ cython_debug/
 *.swp
 *.swo
 
-# Env
-# *.env
+# Env, so you don't upload your openai api key
+*.env
