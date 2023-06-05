@@ -163,3 +163,6 @@ cython_debug/
 *~
 *.swp
 *.swo
+
+# Env
+# *.env
