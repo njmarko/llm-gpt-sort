@@ -5,6 +5,18 @@ New type of sorting algorithm. Use large language model (llm like gpt, chat-gpt 
 
 Simply give a Large Language Model any collectio and ask it to sort it.
 
+## TODO
+- Sorting doesn't always work with bigger numbers or longer words
+  - Try to specify what kind of sorting "procedure" (algorithm) LLM should follow
+    - Ask it to sort by the first digit, then in numbers grouped by the first digit ask it to sort by the second digit etc
+    - Maybe some algorithmic procedure is better suited for LLMs, like some algorithms for sorting are more suitable for some real world situations where humans are asked to sort things (think pancake sort at grandmas dinner)
+  - Since LLMs operate on token level, this can be the cause of these problems with longer words/bigger numbers.
+    - See if breaking the large tokens into smaller tokens can alleviate this problem
+- See how many numbers can be sorted considering the context length of the model
+  - Sort separate groups of numbers, and then merge them into the final sorted result. See if this can allow for sorting of collections that exceed context length
+- Explore what other algorithms LLMs could execute
+  - It is simple to determine if sorting result is correct, and that is why I chose to experiment with it first
+
 ## Example
 
 Give GPT a collection of words.
